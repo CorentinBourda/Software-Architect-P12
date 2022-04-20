@@ -13,14 +13,14 @@ Nous prévoyons de réduire de moitié les temps de cycle. Le délai typique de 
 
 Il faut réussir à ne transférer les packages de développement que 3 à 4 fois au lieu de 6 à 7 fois comme aujourd'hui. Nous avons besoin d'une nouvelle architecture logicielle pour y parvenir.
 
-Ce projet doit être complété en 8 semaines (voir [High Level Plan](../../Images/13_High_level_plan.png)). Une équipe projet, des porteurs de projet et des prestataires externes ont été désignés pour participer. D'autres domaines clés de l'organisation seront impliqués (voir [RACI Matrix](../../Images/11_RACI.xlsx) and [Stakeholders Map](../../Images/12_Stakeholders_Map.png)).
+Ce projet doit être complété en 8 semaines (voir [plan d’architecture à haut niveau](../../Images/13_High_level_plan.png)). Une équipe projet, des porteurs de projet et des prestataires externes ont été désignés pour participer. D'autres domaines clés de l'organisation seront impliqués (voir [matrice RACI](../../Images/11_RACI.xlsx) et le [plan des parties prennantes](../../Images/12_Stakeholders_Map.png)).
 
 
 Architecture actuelle
 
 L'architecture actuelle de WebStreet est variable et ne suit pas un modèle commun. Les développeurs de sites s'appuient sur leurs propres templates et en demandent généralement dans leur entourage. Cela pose des problèmes lors du transfert du package : la nouvelle équipe dans un autre pays doit "découvrir" quels modèles ont été utilisés et doit lire une grande quantité de documentation avant de commencer à coder. Ce fait retarde le cycle de livraison d'au moins 12 heures. Pour décrire clairement l'architecture actuelle, nous pourrions dire "l'architecture actuelle n'était basée sur aucune conception, elle est le résultat de mesures rapides pour gérer une croissance exponentielle".
 
-Pour un schéma décrivant l’architecture actuelle voir [Tailored Architecture Framework](../Tailored%20Architecture%20Framework/README.md)
+Pour un schéma décrivant l’architecture actuelle voir [framework d’architecture sur mesure](../Tailored%20Architecture%20Framework/README.md)
 
 
 Agilité Business
@@ -39,7 +39,7 @@ Voici quelques contraintes organisationnelles importantes que nous devons prendr
 
 2. Nous n'avons pas toutes les connaissances et l'expérience requises pour ce projet au sein de notre organisation. Nous embaucherons des PME externes (experts en la matière) en tant que pigistes pour certains aspects techniques de ce projet.
 
-3. Les sponsors du projet et l'équipe du projet s'accorderont sur la fréquence, la dynamique et les documents de support des réunions d'état du projet au début du projet. Toutes les parties prenantes se conformeront à ces principes convenus (See [RACI Matrix](../../Images/11_RACI.xlsx) et [Stakeholders Map](../../Images/12_Stakeholders_Map.png)).
+3. Les sponsors du projet et l'équipe du projet s'accorderont sur la fréquence, la dynamique et les documents de support des réunions d'état du projet au début du projet. Toutes les parties prenantes se conformeront à ces principes convenus (Voir [matrice RACI](../../Images/11_RACI.xlsx) et [le plan des parties prennantes](../../Images/12_Stakeholders_Map.png)).
 
 
 Problèmes à résoudre

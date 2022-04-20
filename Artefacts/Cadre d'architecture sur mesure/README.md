@@ -6,7 +6,7 @@ Voici les principes de la méthodologie d'architecture de WebStreet :
 
 1. Aucun code n'est écrit à partir de zéro. Toutes les personnalisations doivent maximiser l'utilisation de modèles et d'atomes de site.
 
-2. Si une partie du site est personnalisée, elle doit être documentée au début du code à l'aide du document [CustomizationDictionary](../../Images/18_Customization_Dictionary.png),
+2. Si une partie du site est personnalisée, elle doit être documentée au début du code à l'aide du document [Dictionnaire de customization](../../Images/18_Customization_Dictionary.png),
 qui décrit les personnalisations que nous avons effectuées pour un client, quel modèle ou Site Atom a été personnalisé et comment.
 
 3. Toute la documentation doit être rédigée avec une approche d'équipe globale : plusieurs équipes WebStreet situées dans des fuseaux horaires différents vont développer le site Web pour un client spécifique et le maintenir plus tard.
@@ -39,14 +39,13 @@ Ces outils sont déployés dans l'organisation pour aider au développement et �
 
 ***Dictionnaire des site atoms :** une base de données de tous les atomes du site pour commencer la conception et le développement d'un site Web pour un client. Voir exemple [ici](../../Images/20_Site_Atom_Dictionary.xlsx).
 Chaque entrée du dictionnaire décrit l'objectif des Atomes du site, la description, les mises à jour du composant, les paramètres qu'il peut recevoir, l'utilisation typique et les liens vers des projets où ce composant a été utilisé.
-
 **Dictionnaire de contrôle de configuration :** une base de données des relations entre les modèles et les atomes de site. Ce qui appelle quoi, ce qui est appelé par quoi. Voir schéma [ici](../../Images/15_Configuration_Control_Dictionary.png).
 
 **Dictionnaire de personnalisation :** une description détaillée de toutes les personnalisations effectuées sur les clients WebStreet, avec des liens vers de vrais sites Web. Voir schéma [ici](../../Images/18_Customization_Dictionary.png).
 
 Interface avec modèle de gestion
 
-Cette méthode d'architecture stricte utilisée dans WebStreet ne pourrait être un avantage concurrentiel principal sans le soutien formel de l'organisation et de la culture interne. Voir la matrice RACI (../../Images/11_RACI.xlsx) et le plan des parties prenantes (../../Images/12_Stakeholders_Map.png). Les interfaces suivantes ont contribué à son succès et au succès de WebStreet sur le marché :
+Cette méthode d'architecture stricte utilisée dans WebStreet ne pourrait être un avantage concurrentiel principal sans le soutien formel de l'organisation et de la culture interne. Voir [la matrice RACI](../../Images/11_RACI.xlsx) et le [plan des parties prenantes](../../Images/12_Stakeholders_Map.png). Les interfaces suivantes ont contribué à son succès et au succès de WebStreet sur le marché :
 
 **Interface avec le Service Recrutement :** aucun programmeur ou designer n'écrit une ligne de code s'il n'est pas formé à la méthodologie de l'architecture WebStreet. Ceci est soigneusement synchronisé entre les équipes techniques et le service de recrutement de WebStreet (qui fait partie du service des ressources humaines).
 
