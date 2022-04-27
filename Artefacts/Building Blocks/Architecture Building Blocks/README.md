@@ -12,6 +12,8 @@ La solution A consiste à séparer l'application pour le client en deux sous app
 - Une application devra stocker les informations dont le client a émis le souhait de gérer l'infrastructure
 - Une autre application devra stocker le reste des informations et s'occuper de la communication avec le navigateur des utilisateurs
 
+L'application gérée par webstreet sera hébergée dans des serveurs à haute disponibilité et pouvant gérer de forts pics de connexion. De cette manière le client n'aurra pas à s'occuper de scale la majeure partie de l'infrasctructure et pourra avoir accès à des serveurs moins chers grâce à la mise en comun de nos ressources.
+
 Afin de pouvoir faire coexister ces de ux applications, un système d'API devra être mis en place. Chaque site atoms présent sur l'application hébergé par le client devra pouvoir permettre de réaliseres actions de CRUD sauf cas spécifique de sécurité.
 
 Dans le cas où le client souhaite conserver les informations d'authentification de ses utilisateurs,, l'API devra permettre de vérifier à partir des données rentrées dans l'IHM vérifier que les identifiants sont corrects.
