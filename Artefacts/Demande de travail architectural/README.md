@@ -46,7 +46,7 @@ Problèmes à résoudre
 
 Voici quelques problèmes ouverts qui n'ont pas encore été résolus :
 
-1. Certains clients auront besoin d'un haut niveau de personnalisation. Nous ne pourrons pas utiliser nos Atomes de site et nos modèles pour ces clients. Voulons-nous d'eux comme clients ?
+1. Certains clients auront besoin d'un haut niveau de personnalisation. Nous ne pourrons pas utiliser nos Atomes de site et nos modèles pour ces clients. Il faudra se questionner sur l'intéret de garder les clients avec ces exigences
 
 2. Nous avons actuellement des Atomes de site et des modèles uniquement pour les langues de gauche à droite (anglais, français, espagnol, russe, etc.). Notre architecture, nos Atomes de site et nos modèles doivent-ils prendre en charge les langues qui s'écrivent de droite à gauche ? (arabe, farsi, hébreu, etc.)
 
