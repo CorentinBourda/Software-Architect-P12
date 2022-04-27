@@ -6,7 +6,7 @@
 
 Solution A:
 
-![Shéma récapitulatif de la solution A](../../Images/solutionAhighlevelarchitecture.drawio.png "Shéma récapitulatif de la solution A")
+![Shéma récapitulatif de la solution A](../../../Images/solutionAhighlevelarchitecture.drawio.png "Shéma récapitulatif de la solution A")
 
 La solution A consiste à séparer l'application pour le client en deux sous applications:
 - Une application devra stocker les informations dont le client a émis le souhait de gérer l'infrastructure
@@ -20,4 +20,4 @@ Dans le cas où le client souhaite conserver les informations d'authentification
 
 Solution B:
 
-![Shéma récapitulatif de la solution B](../../Images/solutionBwebstreet.drawio.png "Shéma récapitulatif de la solution B")
+![Shéma récapitulatif de la solution B](../../../Images/solutionBwebstreet.drawio.png "Shéma récapitulatif de la solution B")
