@@ -4,21 +4,17 @@
 
 **Templates:** a set of Site Atoms that work together for a specific purpose. See example [here](../../../Images/32_Building_Block_Template.png).
 
-**Solution A:**
+**Solution privilégiant l'apect technique:**
 
-![Shéma récapitulatif de la solution A](../../../Images/solutionAhighlevelarchitecture.drawio.png "Shéma récapitulatif de la solution A")
+![Shéma récapitulatif de la solution privilégiant l'apect technique](../../../Images/diagrammeSolutionTechniqueWebstreet.png "Shéma récapitulatif de la solution privilégiant l'apect technique")
+Cette solution visant à fournir une répone technique à la probèmatique consiste à mettre en comun des ressources d'infrastructure réseau entre les différents sites des clients par le moyen d'un cluster Kubernetes:
+Nous mettrons à disposition des serveurs de très grande capacité qui seront partagées entre les clients. Chaque client se vera attribuer un minimum de 2 nodes qui seront dans des serveurs situés dans des availaibility zones différentes
+Cette solution présente de nombreux avantages:
+- Une fois la solution mise en place, la mise en place d'une nouvelle application d'un client est très rapide, il suffit de faire entrer le serveur du client dans le cluster kubernetes et de créer les pods coté Webstreet en ligne de commande
+- L'utilisation de grands serveurs coté webstreet permet de grandement faciliter le scale des applications, une applicatiopn peut absorber un pic de connexion plus élevé si les autres ont peu de connexion
+- Kubernetes est un système d'orchestration des nodes qui sait gérer les ressources de façon inteligente et  optimisée
 
-La solution A consiste à séparer l'application pour le client en deux sous applications:
-- Une application devra stocker les informations dont le client a émis le souhait de gérer l'infrastructure
-- Une autre application devra stocker le reste des informations et s'occuper de la communication avec le navigateur des utilisateurs
-
-L'application gérée par webstreet sera hébergée dans des serveurs à haute disponibilité et pouvant gérer de forts pics de connexion. De cette manière le client n'aurra pas à s'occuper de scale la majeure partie de l'infrasctructure et pourra avoir accès à des serveurs moins chers grâce à la mise en comun de nos ressources.
-
-Afin de pouvoir faire coexister ces de ux applications, un système d'API devra être mis en place. Chaque site atoms présent sur l'application hébergé par le client devra pouvoir permettre de réaliseres actions de CRUD sauf cas spécifique de sécurité.
-
-Dans le cas où le client souhaite conserver les informations d'authentification de ses utilisateurs,, l'API devra permettre de vérifier à partir des données rentrées dans l'IHM vérifier que les identifiants sont corrects.
-
-Tableau récapitulatif des réponse de la solution A aux nouvelles exigences:
+Les images de l'application seront stockées de façon sécurisée sur un registry Docker privé créé pour l'ocasion.
 
 | Exigence                                                                                                                                                  | Solution apportée                                                                                                                                              | Points forts de la solution | Lacunes de la solution |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|------------------------|
@@ -30,7 +26,7 @@ Tableau récapitulatif des réponse de la solution A aux nouvelles exigences:
 | Toute mise à jour devra être effectuée sur nos serveurs sur demande<br>de l'acheteur                                                                      | Nous mettrons en place des outils de devops sur nos outils<br>de communication qui permettront aux clients de créer <br>automatiquement de nouvelles pipelines |                             |                        |
 | Les mises à jour seront centralisées et envoyées à tous nos clients <br>en même temps.                                                                    |                                                                                                                                                                |                             |                        |
 
-**Solution B:**
+**Solution privilégiant l'aspect commercial:**
 
 
 ![Shéma récapitulatif de la solution B](../../../Images/solutionBwebstreet.drawio.png "Shéma récapitulatif de la solution B")
