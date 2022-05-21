@@ -12,6 +12,8 @@ Cette solution présente de nombreux avantages:
 
 Nous pouvons cependant relever que cette solution prendra beaucoup de temps et de resources pour qu'elle soit mise en place étant donnée la complexité de la mise en place d'un serveur Kubernetes custom
 
+Nous avons choisi Kubernetes comme outil d'orchestration pout cette solution étant donné sa puissance pour gérer des clusters de très grande taille
+
 Les images de l'application seront stockées de façon sécurisée sur un registry Docker privé créé pour l'ocasion.
 
 | Exigence                                                                                                                                                  | Solution apportée                                                                                                                                              | Points forts de la solution | Lacunes de la solution |
@@ -31,6 +33,8 @@ Cette solution présente de nombreux avantages:
 - Sa mise en place nécéssite très peu de préparation
 - Le client peut choisir de façon personalisée les serveurs coté Webstreet et donc scale le plus précisement possible son application
 - Nous pouvons vendre des serveurs web au client
+
+Nous avons choisi l'utilisation de Docker Swarm pour cette solution étant donné sa facilité à être mie en place. Cet outil d'orchestration convient très bien pour les clusters de faible taille.
 
 Cependant, cette solution demendera des actions de devops plus conséquente pour la mise en place de chaque application client. Il faudra en effet à chaque fois récréer un cluster Docker Swarm
 
