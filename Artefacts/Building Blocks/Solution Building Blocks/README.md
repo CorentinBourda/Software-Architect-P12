@@ -26,3 +26,12 @@ Les développeurs backend devront permettre au client de choisir ,lors de config
 **Solution privilégiant l'aspect commercial:**
 La solution privilégiant l'aspect commercial néssécitera également de pouvoir séparer les sites atoms choisis par le client afin de les héberger séparement, cela demendera un travail de développement backend qui sera fourni par nos dévelppeurs.
 De plus, la solution exigera de mettre en place un cluster Docker Swarm pour chaque client. La création d'un tel cluster devra être automatisée le plus possible afin de nous faireéconomiser des ressources DevOps
+
+Automatisation de la création des clusters swarm:
+Afin de nousfaire économiser des ressrouces de SysAdmin/ Devops, il sera important de mettre en place un process d'ajout des clusters Docker swarm qui demandera le moins d'intervention humaine possible. Il sera donc très important de pouvoir s'appuyer sur un Devops senior qui aurra la charge de concevoir un tel procesus.
+
+Ajout des machines et support:
+Un cluster Docker swarm est plus facile à rejoindre qu'un cluster kubernetes étant donné qu'il suffit que les outils Docker soient installé sur une machine Linux. Il sera tout de même nécéssaire de mettre en place une documentation à destination des services informatique des clients et de propser un SysAdmin en support payant.
+
+Séparation des building blocks:
+Idem à la séparation des sites atoms de la première solution
